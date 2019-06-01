@@ -1,0 +1,433 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.button {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #ee3643;
+}
+
+.header-top {
+	margin: 0;
+	padding: 0;
+
+	color: #ffffff;
+
+	background-color: #293449;
+}
+
+.header-top a {
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.make-order-button {
+	background-color: #63a63e;
+}
+
+.header-details h1 {
+	margin: 0;
+
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: #ee3643;
+}
+
+.header-details .phone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+
+.header-details address {
+	font-size: 14px;
+	line-height: 24px;
+	font-style: normal;
+	color: #32425c;
+}
+
+.header-bottom {
+	margin: 0;
+	padding: 0;
+
+	background-color: #f4f7f9;
+}
+
+.log-off {
+	list-style: none
+}
+
+.log-off a,
+.log-on p {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.log-on a {
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+}
+
+.header-nav {
+	background-color: #32425c;
+}
+
+.header-nav ul {
+	list-style: none;
+}
+
+.header-nav a {
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+}
+
+.catalog ul {
+	list-style: none;
+}
+
+.catalog li:nth-child(4n + 1) {
+	background-color: #ffbf47;
+}
+
+.catalog li:nth-child(7n + 2) {
+	background-color: #3bbce3;
+}
+
+.catalog li:nth-child(7n + 3) {
+	background-color: #dc91d8;
+}
+
+.catalog li:nth-child(7n + 4) {
+	background-color: #8ed78f;
+}
+
+.catalog h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.catalog a {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popular-items-header,
+.popular-brands-header {
+	background-color: #f9f5f0;
+}
+
+.popular-items-header h2,
+.popular-brands-header h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.popular-items ul,
+.popular-brands ul {
+	list-style: none;
+}
+
+.popular-items h3,
+.goods h2 {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.price-old {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 700;
+	text-decoration: line-through;
+	color: #a9a9a9;
+}
+
+.price {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #ffffff;
+
+	background-color: #ee3643;
+}
+
+.services {
+	margin: 0;
+
+	background-color: #f4f8f9;
+}
+
+.services h2,
+.delivery-and-pickup h2  {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.services p,
+.delivery-and-pickup p {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.services h3 {
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.services ul,
+.delivery-and-pickup ul {
+	list-style: none;
+}
+
+.popup {
+	display: none;
+}
+
+.footer-top {
+	margin: 0;
+	background-color: #32425c;
+}
+
+.footer-top address,
+.footer-top .phone {
+	font-size: 18px;
+	line-height: 24px;
+	font-style: normal;
+	color: #ffffff;
+}
+
+.footer-top ul {
+	margin: 0;
+	list-style: none;
+}
+
+.footer-nav a {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-nav li:nth-child(9n + 1) a,
+.footer-nav li:nth-child(9n + 2) a,
+.footer-nav li:nth-child(9n + 3) a,
+.footer-nav li:nth-child(9n + 4) a,
+.footer-nav li:nth-child(9n + 5) a {
+	color: #f1f5f7;
+}
+
+.footer-nav li:nth-child(9n + 6) a,
+.footer-nav li:nth-child(9n + 7) a,
+.footer-nav li:nth-child(9n + 8) a,
+.footer-nav li:nth-child(9n + 9) a {
+	color: #ffd180;
+}
+
+.footer-bottom {
+	margin: 0;
+	background-color: #293449;
+}
+
+.footer-bottom p {
+	margin: 0;
+
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.footer-bottom a {
+	color: #ffd180;
+}
+
+.footer-bottom ul {
+	list-style: none;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-page h1 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+
+	background-color: #f2f6f8;
+}
+
+.catalog-page legend {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-page ul {
+	list-style: none;
+}
+
+.catalog-page label {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-page button {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sorting {
+	background-color: #f7f3ec;
+}
+
+.sorting span,
+.sorting a {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sort-button {
+	opacity: 0.3;
+}
+
+.sort-button-active {
+	color: #ee3643;
+}
+
+.to-buy,
+.to-bookmarks {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.to-buy {
+	color: #ffffff;
+
+	background-color: #63a63e;
+}
+
+.to-bookmarks {
+	color: #32425c;
+
+	background-color: #ffffff;
+	border: 3px solid #63a63e;
+}
+
+.pages ol {
+	list-style: none;
+}
+
+.pages li {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.active-page {
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.hidden-page {
+	display: none;
+}
+
+.about-catalog-section {
+	background-color: #f2f6f8;
+}
+
+.about-catalog-section h2 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.about-catalog-section p {
+	margin: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
