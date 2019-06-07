@@ -34,8 +34,8 @@ a {
 .std-button {
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: 11px;
+	padding-bottom: 10px;
 
 	font-size: 14px;
 	line-height: 18px;
@@ -293,8 +293,8 @@ a {
 
 	margin-top: 39px;
 	padding: 0;
-	padding-left: 52px;
-	padding-right: 54px;
+	padding-left: 22px;
+	padding-right: 23px;
 
 	list-style: none;
 	box-shadow: 0 5px #293449;
@@ -421,14 +421,14 @@ a {
 }
 
 .popular-items-header {
-	margin-top: 53px;
+	margin-top: 48px;
 }
 
 .popular-items-header h2,
 .popular-brands-header h2 {
 	margin-top: 33px;
-	margin-bottom: 35px;
-	padding-left: 30px;
+	margin-bottom: 30px;
+	padding-left: 29px;
 
 	font-size: 30px;
 	line-height: 30px;
@@ -452,8 +452,9 @@ a {
 
 .popular-items h3,
 .goods h2 {
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
@@ -467,7 +468,7 @@ a {
 	justify-content: space-between;
 
 	margin: 0;
-	margin-top: 21px;
+	margin-top: 19px;
 	padding: 0;
 }
 
@@ -480,25 +481,32 @@ a {
 }
 
 .price-old {
+	margin-top: 12px;
+	margin-bottom: 0;
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700;
 	text-decoration: line-through;
 	color: #a9a9a9;
+	text-transform: uppercase;
 }
 
 .price {
 	width: 141px;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	margin-left: 43px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	margin-left: 41px;
+	margin-top: 11px;
+	margin-bottom: 21px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700;
 	color: #ffffff;
+	text-transform: uppercase;
 
 	background-color: #ee3643;
 }
@@ -519,7 +527,7 @@ a {
 .popular-brands-list li {
 	display: flex;
 
-	margin-top: 20px;
+	margin-top: 19px;
 
 	width: 220px;
 	height: 145px;
@@ -548,8 +556,8 @@ a {
 .services {
 	margin: 0;
 	margin-top: 85px;
-	padding-top: 68px;
-	min-height: 522px;
+	padding-top: 39px;
+	min-height: 521px;
 	box-sizing: border-box;
 
 	background-color: #f4f8f9;
@@ -564,7 +572,7 @@ a {
 }
 
 .services h2 + p {
-	margin-top: 38px;
+	margin-top: 26px;
 	width: 398px;
 }
 
@@ -578,7 +586,7 @@ a {
 
 .services ul {
 	margin-left: 320px;
-	margin-top: 76px;
+	margin-top: 67px;
 }
 
 .services h3 {
@@ -586,10 +594,11 @@ a {
 	line-height: 36px;
 	text-transform: uppercase;
 	color: #32425c;
+	margin-bottom: 0;
 }
 
 .services h3 + p {
-	margin-top: 34px;
+	margin-top: 23px;
 	width: 275px;
 }
 
@@ -609,29 +618,39 @@ a {
 	display: flex;
 	justify-content: space-between;
 
-	padding-bottom: 86px;
+	padding-bottom: 85px;
 }
 
 .delivery {
 	width: 519px;
 }
 
-.delivery h2 {
-	margin-top: 38px;
+.delivery h2,
+.pickup h2 {
+	margin-top: 66px;
 }
 
 .delivery p {
-	margin-top: 36px;
+	margin-top: 26px;
+}
+
+.delivery p:nth-child(3) {
+	width: 385px;
 }
 
 .delivery li {
-	font-weight: 700;
 	padding-left: 36px;
+	margin-top: 20px;
+
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
 }
 
 .delivery .std-button {
 	width: 220px;
-	margin-top: 37px;
+	margin-top: 22px;
 
 	text-align: center;
 }
@@ -642,18 +661,18 @@ a {
 
 .pickup p {
 	width: 179px;
-	margin-top: 39px;
+	margin-top: 26px;
 }
 
 .pickup img {
 	width: 300px;
 	height: 158px;
-	margin-top: 36px;
+	margin-top: 18px;
 }
 
 .pickup .std-button {
 	width: 300px;
-	margin-top: 40px;
+	margin-top: 31px;
 
 	text-align: center;
 }
@@ -664,7 +683,7 @@ a {
 
 .footer-top {
 	margin: 0;
-	padding-bottom: 53px;
+	padding-bottom: 32px;
 
 	background-color: #32425c;
 }
@@ -686,7 +705,7 @@ a {
 	display: block;
 
 	width: 220px;
-	height: 68px;
+	height: 63px;
 	padding-top: 20px;
 	box-sizing: border-box;
 
@@ -724,7 +743,7 @@ a {
 }
 
 .footer-nav li {
-	margin-top: 42px;
+	margin-top: 36px;
 	margin-right: 59px;
 }
 
@@ -907,25 +926,58 @@ a {
 	text-transform: uppercase;
 }
 
-.goods-list {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
+.filter fieldset {
+	border: none;
 }
 
-.goods-list li {
-	margin-top: 21px;
+.filter ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
-	width: 220px;
-	border: 1px solid #eaeaea;
-	box-sizing: border-box;
+.filter li {
+	position: relative;
+	padding-left: 35px;
+	margin-top: 15px;
+}
 
-	text-align: center;
+.brands-filter-list .filter-input + label::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: 0;
+
+	background-image: url("../img/svg-technomart/checkbox-off.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.brands-filter-list .filter-input:checked + label::before {
+	background-image: url("../img/svg-technomart/checkbox-on.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.power-filter-list .filter-input + label::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: 0;
+
+	background-image: url("../img/svg-technomart/radio-off.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.power-filter-list .filter-input:checked + label::before {
+	background-image: url("../img/svg-technomart/radio-on.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .catalog-page label {
@@ -936,14 +988,8 @@ a {
 	text-transform: uppercase;
 }
 
-.catalog-page button {
-	display: none;
-	/*временно ^ */
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	color: #000000;
-	text-transform: uppercase;
+.catalog-page label:hover {
+	cursor: pointer;
 }
 
 .sorting {
@@ -984,6 +1030,37 @@ a {
 
 .sort-button-active {
 	color: #ee3643;
+}
+
+.goods-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.goods-list li {
+	margin-top: 21px;
+
+	width: 220px;
+	border: 1px solid #eaeaea;
+	box-sizing: border-box;
+
+	text-align: center;
+}
+
+.catalog-page button {
+	display: none;
+	/*временно ^ */
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .to-buy,

@@ -69,7 +69,7 @@
 						<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 							<fieldset class="brands-fieldset">
 								<legend>Производители:</legend>
-								<ul>
+								<ul class="brands-filter-list">
 									<li>
 										<input class="filter-input visually-hidden checkbox-input" type="checkbox" name="bosch" id="filter-bosch" checked>
 										<label for="filter-bosch">Bosch</label>
@@ -94,14 +94,14 @@
 							</fieldset>
 							<fieldset class="power-fieldset">
 								<legend>Питание:</legend>
-								<ul>
+								<ul class="power-filter-list">
 									<li>
-										<input class="filter-input visually-hidden radio-input" type="radio" name="battery" id="filter-battery" checked>
-										<label for="filter-bosch">Аккумуляторные</label>
+										<input class="filter-input visually-hidden radio-input" type="radio" id="filter-battery" name="power-group" checked>
+										<label for="filter-battery">Аккумуляторные</label>
 									</li>
 									<li>
-										<input class="filter-input visually-hidden radio-input" type="radio" name="network" id="filter-network">
-										<label for="filter-bosch">Сетевые</label>
+										<input class="filter-input visually-hidden radio-input" type="radio" id="filter-network" name="power-group">
+										<label for="filter-network">Сетевые</label>
 									</li>
 								</ul>
 							</fieldset>
