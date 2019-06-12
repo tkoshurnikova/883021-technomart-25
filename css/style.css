@@ -121,12 +121,48 @@ a {
 
 
 .bookmarks {
+	position: relative;
 	margin-right: 10px;
 	padding-left: 54px;
 }
 
+.bookmarks svg {
+	position: absolute;
+	left: 27px;
+	top: 12px;
+	fill-opacity: 0.3;
+}
+
 .shopping-cart {
+	position: relative;
 	padding-left: 50px;
+}
+
+.shopping-cart svg {
+	position: absolute;
+	left: 18px;
+	top: 12px;
+	fill-opacity: 0.3;
+}
+
+.shopping-cart:hover path,
+.shopping-cart:hover circle,
+.shopping-cart:focus path,
+.shopping-cart:focus circle,
+.bookmarks:hover path,
+.bookmarks:focus path {
+	fill-opacity: 1;
+}
+
+.shopping-cart:active,
+.bookmarks:active {
+	opacity: 0.6;
+}
+
+.shopping-cart:active path,
+.shopping-cart:active circle,
+.bookmarks:active path {
+	fill-opacity: 0.5;
 }
 
 .shopping-cart-active {
@@ -191,6 +227,10 @@ a {
 	color: #ee3643;
 
 	border: 3px solid #ffffff;
+
+	background-image: url("../img/svg-technomart/icon-phone.svg");
+	background-position: 12px 10px;
+	background-repeat: no-repeat;
 }
 
 .header-details address {
@@ -228,6 +268,7 @@ a {
 }
 
 .login {
+	position: relative;
 	display: block;
 	padding-left: 46px;
 	padding-top: 12px;
@@ -235,6 +276,12 @@ a {
 	padding-right: 16px;
 	margin-right: 10px;
 	vertical-align: middle;
+}
+
+.login svg {
+	position: absolute;
+	top: 14px;
+	left: 13px;
 }
 
 .registration {
@@ -263,17 +310,37 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.login:hover path,
+.login:focus path {
+	fill: #32425c;
+}
+
 .log-on p {
+	position: relative;
 	width: 302px;
 	margin: 0;
-	padding-top: 14px;
-	margin-bottom: 10px;
-	padding-right: 69px;
-	padding-bottom: 11px;
-	padding-left: 47px;
+	padding-top: 12px;
+	margin-bottom: 5px;
+	padding-right: 32px;
+	padding-bottom: 12px;
+	padding-left: 50px;
 	box-sizing: border-box;
 
 	background-color: #ffffff;
+}
+
+.log-on svg {
+	position: absolute;
+}
+
+.profile-icon {
+	left: 16px;
+	top: 13px;
+}
+
+.logout-icon {
+	right: 10px;
+	top: 14px;
 }
 
 .log-on a {
@@ -348,11 +415,38 @@ a {
 
 .catalog li:first-child {
 	margin-left: 0;
+
+	background-image: url("../img/svg-technomart/icon-1.svg");
+	background-position: 213px 32px;
+	background-repeat: no-repeat;
 }
 
-.catalog li:nth-child(4),
+.catalog li:nth-child(2) {
+	background-image: url("../img/svg-technomart/icon-2.svg");
+	background-position: 197px 34px;
+	background-repeat: no-repeat;
+}
+
+.catalog li:nth-child(3) {
+	background-image: url("../img/svg-technomart/icon-3.svg");
+	background-position: 191px 32px;
+	background-repeat: no-repeat;
+}
+
+.catalog li:nth-child(4) {
+	margin-left: 640px;
+
+	background-image: url("../img/svg-technomart/icon-4.svg");
+	background-position: 196px 26px;
+	background-repeat: no-repeat;
+}
+
 .catalog li:nth-child(5) {
 	margin-left: 640px;
+
+	background-image: url("../img/svg-technomart/icon-5.svg");
+	background-position: 191px 31px;
+	background-repeat: no-repeat;
 }
 
 .catalog-slider {
@@ -473,12 +567,16 @@ a {
 }
 
 .popular-items-list li {
+	position: relative;
+
 	width: 220px;
+	min-height: 318px;
 	border: 1px solid #eaeaea;
 	box-sizing: border-box;
 
 	text-align: center;
 }
+
 
 .price-old {
 	margin-top: 12px;
@@ -494,12 +592,18 @@ a {
 }
 
 .price {
-	width: 141px;
+	position: absolute;
+	left: 41px;
+	bottom: 4px;
+
+	width: 123px;
+	height: 38px;
+	border-radius: 4px 0 0 4px;
+	box-sizing: border-box;
+
 	padding-top: 9px;
 	padding-bottom: 9px;
-	margin-left: 41px;
-	margin-top: 11px;
-	margin-bottom: 21px;
+	padding-left: 17px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
@@ -509,6 +613,39 @@ a {
 	text-transform: uppercase;
 
 	background-color: #ee3643;
+}
+
+.price::after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+
+	position: absolute;
+	bottom: 0;
+	right: -19px;
+
+	border: 19px solid #ee3643;
+	border-right: 0;
+	border-left-width: 19px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.popular-items-list .new::after,
+.goods-list .new::after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 60px;
+
+	position: absolute;
+	top: -1px;
+	right: -1px;
+
+	z-index: 20;
+	background: url("../img/flag-new.png") no-repeat 0 0;
 }
 
 .popular-brands {
@@ -561,6 +698,9 @@ a {
 	box-sizing: border-box;
 
 	background-color: #f4f8f9;
+	background-image: url("../img/truck.png");
+	background-position: 739px 260px;
+	background-repeat: no-repeat;
 }
 
 .services h2,
@@ -639,6 +779,7 @@ a {
 }
 
 .delivery li {
+	position: relative;
 	padding-left: 36px;
 	margin-top: 20px;
 
@@ -646,6 +787,19 @@ a {
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: 400;
+}
+
+.delivery li::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 0;
+
+	display: block;
+	width: 25px;
+	height: 2px;
+
+	background-color: #ee3643;
 }
 
 .delivery .std-button {
@@ -789,9 +943,8 @@ a {
 
 .footer-bottom .container {
 	display: flex;
-	justify-content: space-between;
 
-	padding-top: 39px;
+	padding-top: 37px;
 	padding-bottom: 35px;
 }
 
@@ -803,7 +956,7 @@ a {
 	color: #ffffff;
 }
 
-.footer-bottom p:first-child {
+.copyright {
 	width: 228px;
 }
 
@@ -817,16 +970,47 @@ a {
 
 	width: 132px;
 	margin: 0;
+	margin-top: -2px;
+	margin-left: 162px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .social-buttons li {
+	position: relative;
+
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
 	background-color: #212a3a;
+}
+
+.social-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 42px;
+	height: 42px;
+}
+
+.vk-button::before {
+	background-image: url("../img/svg-technomart/icon-vk.svg");
+	background-position: 8px 12px;
+	background-repeat: no-repeat;
+}
+
+.fb-button::before {
+	background-image: url("../img/svg-technomart/icon-fb.svg");
+	background-position: 15px 10px;
+	background-repeat: no-repeat;
+}
+
+.inst-button::before {
+	background-image: url("../img/svg-technomart/icon-insta.svg");
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
 }
 
 .social-buttons li:hover,
@@ -836,12 +1020,19 @@ a {
 	cursor: pointer;
 }
 
+.contacts-wrapper {
+	display: flex;
+	margin-right: 15px;
+	margin-left: 119px;
+}
+
 .feedback {
 	width: 135px;
 }
 
 .made-by {
 	width: 96px;
+	padding-left: 53px;
 }
 
 .feedback a:hover,
@@ -856,7 +1047,6 @@ a {
 	color: #ee3643;
 	text-decoration: none;
 }
-
 
 .breadcrumbs {
 	display: flex;
@@ -1044,9 +1234,12 @@ a {
 }
 
 .goods-list li {
+	position: relative;
+
 	margin-top: 21px;
 
 	width: 220px;
+	min-height: 318px;
 	border: 1px solid #eaeaea;
 	box-sizing: border-box;
 

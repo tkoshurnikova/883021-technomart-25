@@ -17,8 +17,20 @@
 						<input type="search" name="search" id="search" placeholder="Поиск:">
 					</p>
 					<div class="top-header-buttons">
-						<a class="bookmarks" href="index.html">Закладки: 0</a>
-						<a class="shopping-cart" href="index.html">Корзина: 0</a>
+						<a class="bookmarks" href="index.html">
+							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+								<path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+							</svg>
+							Закладки: 0
+						</a>
+						<a class="shopping-cart" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+								<circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+								<circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+								<path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+							</svg>
+							Корзина: 0
+						</a>
 						<a class="make-order-button" href="index.html">Оформить заказ</a>
 					</div>
 				</div>
@@ -28,11 +40,21 @@
 					<div class="header-details">
 						<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 						<div class="header-contacts">
-							<p class="phone">+7 (812) 555-05-55</p>
+							<p class="phone">
+								+7 (812) 555-05-55
+							</p>
 							<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 						</div>
 						<ul class="log-off">
-							<li><a class="login" href="#">Войти</a></li>
+							<li>
+								<a class="login" href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+										<path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+										<path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+									</svg>
+									Войти
+								</a>
+							</li>
 							<li><a class="registration" href="#">Регистрация</a></li>
 						</ul>
 					</div>
@@ -88,7 +110,7 @@
 					<p>Настоящие мужские игрушки</p>
 					<img src="img/slide-image-2.jpg" width="620" height="266" alt="Перфораторы">
 					<a href="catalog.html">Открыть каталог</a>
-				</div>				
+				</div>
 			</section>
 			<section class="popular-items container">
 				<div class="popular-items-header">
@@ -124,7 +146,7 @@
 						<a href="#">
 							<img src="img/BOSCH-BFG-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
 							<h3>Перфоратор BOSCH BFG 2000</h3>
-							<p class="price">25500 р.</p>
+							<p class="price">12500 р.</p>
 						</a>
 					</li>
 				</ul>
@@ -282,7 +304,7 @@
 			</div>
 			<div class="footer-bottom">
 				<div class="container">
-					<p>
+					<p class="copyright">
 						© 2010–2019 Компания «Техномарт» 
 						Все права защищены
 					</p>
@@ -291,8 +313,10 @@
 						<li><a class="social-button fb-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
 						<li><a class="social-button inst-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
 					</ul>
-					<p class="feedback">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-					<p class="made-by">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+					<div class="contacts-wrapper">
+						<p class="feedback">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+						<p class="made-by">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+					</div>
 				</div>
 			</div>
 		</footer>
