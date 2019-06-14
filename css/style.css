@@ -698,9 +698,6 @@ a {
 	box-sizing: border-box;
 
 	background-color: #f4f8f9;
-	background-image: url("../img/truck.png");
-	background-position: 739px 260px;
-	background-repeat: no-repeat;
 }
 
 .services h2,
@@ -724,12 +721,8 @@ a {
 	color: #000000;
 }
 
-.services ul {
-	margin-left: 320px;
-	margin-top: 67px;
-}
-
 .services h3 {
+	margin-top: 0;
 	font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase;
@@ -737,18 +730,96 @@ a {
 	margin-bottom: 0;
 }
 
-.services h3 + p {
-	margin-top: 23px;
-	width: 275px;
+.services-list {
+	position: relative;
+	min-height: 185px;
+
+	margin-top: 74px;
 }
 
-.services li:nth-child(2),
-.services li:nth-child(3) {
-	/*временно*/
-	display: none;
+.services-item p {
+	width: 620px;
+	box-sizing: border-box;
 }
 
-.services ul,
+.services-item:first-child .services-content {
+	background-image: url("../img/truck.png");
+	background-position: 150px 10px;
+	background-repeat: no-repeat;
+}
+
+.services-item:nth-child(2) .services-content {
+	background-image: url("../img/guarantee.png");
+	background-position: 240px 10px;
+	background-repeat: no-repeat;
+}
+
+.services-item:nth-child(3) .services-content {
+	background-image: url("../img/credit.png");
+	background-position: 165px 10px;
+	background-repeat: no-repeat;
+}
+	
+
+.services-item:first-child p {
+	padding-right: 345px;
+}
+
+.services-item:nth-child(2) p {
+	padding-right: 241px;
+}
+
+.services-item:nth-child(3) p {
+	padding-right: 341px;
+}
+
+.services-list label {
+	display: block;
+	width: 240px;
+	height: 61px;
+	box-sizing: border-box;
+
+	padding-left: 22px;
+	padding-top: 21px;
+
+	background-color: #32425c;
+	color: #ffffff;
+	font-family: "Cuprum", Arial, sans-serif;
+  	font-size: 21px;
+  	font-weight: 700;
+
+	cursor: pointer;
+}
+
+.services-content {
+	min-height: 285px;
+	position: absolute;
+	top: 0; 
+	left: 320px; 
+	right: 0; 
+	bottom: 0;
+
+	opacity: 0;
+}
+
+.services-item [type=radio]:checked ~ label {
+	z-index: 2;
+
+	background-color: #ffffff;	
+	color: #32425c;
+}
+
+.services-item [type=radio]:checked ~ label ~ .services-content {
+	z-index: 1;
+	opacity: 1;
+}
+
+.services-list .std-button {
+	width: 195px;
+	padding-left: 44px;
+	box-sizing: border-box;
+}
+
 .delivery-and-pickup ul {
 	list-style: none;
 	padding: 0;
