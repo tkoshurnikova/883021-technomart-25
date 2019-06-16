@@ -5,7 +5,7 @@
 		<title>HTML Academy: Техномарт</title>
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/min-style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -77,8 +77,8 @@
 		<main>
 			<section class="catalog container">
 				<h2 class="visually-hidden">Каталог</h2>
-				<ul>
-					<li class="catalog-new-item">
+				<ul class="catalog-list">
+					<li class="new">
 						<h3>Материалы</h3>
 						<a href="#">На любой вкус</a>
 					</li>
@@ -100,16 +100,20 @@
 					</li>
 				</ul>
 				<div class="catalog-slider">
-					<h3>Дрели</h3>
+					<button class="arrow-left" type="button"><span class="visually-hidden">Назад</span></button>
+					<button class="arrow-right" type="button"><span class="visually-hidden">Вперёд</span></button>
+					<h3 class="slider-heading">Дрели</h3>
 					<p>Соседям на радость!</p>
 					<img src="img/slide-image-1.jpg" width="620" height="266" alt="Дрели">
-					<a href="catalog.html">Открыть каталог</a>
+					<a class="std-button" href="catalog.html">Открыть каталог</a>
 				</div>
-				<div class="catalog-slider">
-					<h3>Перфораторы</h3>
+				<div class="catalog-slider-2">
+					<button class="arrow-left" type="button"><span class="visually-hidden">Назад</span></button>
+					<button class="arrow-right" type="button"><span class="visually-hidden">Вперёд</span></button>
+					<h3 class="slider-heading">Перфораторы</h3>
 					<p>Настоящие мужские игрушки</p>
 					<img src="img/slide-image-2.jpg" width="620" height="266" alt="Перфораторы">
-					<a href="catalog.html">Открыть каталог</a>
+					<a class="std-button" href="catalog.html">Открыть каталог</a>
 				</div>
 			</section>
 			<section class="popular-items container">
@@ -154,7 +158,7 @@
 			<section class="popular-brands container">
 				<div class="popular-brands-header">
 					<h2>Популярные производители</h2>
-					<a class="std-button"" href="#">Все производители</a>
+					<a class="std-button" href="#">Все производители</a>
 				</div>
 				<ul class="popular-brands-list">
 					<li>
@@ -267,25 +271,29 @@
 				</section>
 			</div>
 			<div class="popup white-us">
-				<button type="button">Закрыть</button>
+				<button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
 				<form action="http://echo.htmlacademy.ru" method="post">
-					<p>
-						<label for="input-name">Ваше имя:</label>
-						<input type="text" name="name" id="input-name" placeholder="Имя Фамилия">
-					</p>
-					<p>
-						<label for="input-email">Ваш e-mail:</label>
-						<input type="text" name="email" id="input-email" placeholder="email@example.com">
-					</p>
-					<p>
-						<label>Текст письма:</label>
-						<textarea name="message" rows="6" id="input-message" placeholder="В свободной форме"></textarea>
-					</p>
-					<button type="submit" name="submit">Отправить</button>
+					<div class="white-us-wrapper">
+						<p>
+							<label for="input-name">Ваше имя:</label>
+							<input type="text" name="name" id="input-name" placeholder="Имя Фамилия">
+						</p>
+						<p>
+							<label for="input-email">Ваш e-mail:</label>
+							<input type="text" name="email" id="input-email" placeholder="email@example.com">
+						</p>
+						<p>
+							<label>Текст письма:</label>
+							<textarea name="message" rows="6" id="input-message" placeholder="В свободной форме"></textarea>
+						</p>
+					</div>
+					<div class="write-us-submit">
+						<button class="std-button" type="submit" name="submit">Отправить</button>
+					</div>
 				</form>
 			</div>
 			<div class="popup popup-map">
-				<button type="button">Закрыть</button>
+				<button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
 					<div class="modal-item">
 						<img src="img/map-big.jpg" width="970" height="476" alt="Как добраться?">
 					 </div>
