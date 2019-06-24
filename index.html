@@ -99,21 +99,21 @@
 						<a href="#">Бесплатно</a>
 					</li>
 				</ul>
-				<div class="catalog-slider">
-					<button class="arrow-left" type="button"><span class="visually-hidden">Назад</span></button>
-					<button class="arrow-right" type="button"><span class="visually-hidden">Вперёд</span></button>
-					<h3 class="slider-heading">Дрели</h3>
-					<p>Соседям на радость!</p>
-					<img src="img/slide-image-1.jpg" width="620" height="266" alt="Дрели">
-					<a class="std-button" href="catalog.html">Открыть каталог</a>
-				</div>
-				<div class="catalog-slider-2">
-					<button class="arrow-left" type="button"><span class="visually-hidden">Назад</span></button>
-					<button class="arrow-right" type="button"><span class="visually-hidden">Вперёд</span></button>
-					<h3 class="slider-heading">Перфораторы</h3>
-					<p>Настоящие мужские игрушки</p>
-					<img src="img/slide-image-2.jpg" width="620" height="266" alt="Перфораторы">
-					<a class="std-button" href="catalog.html">Открыть каталог</a>
+				<div class="catalog-slider-wrapper">
+					<div class="catalog-slider">
+						<h3 class="slider-heading">Дрели</h3>
+						<p>Соседям на радость!</p>
+						<img src="img/slide-image-1.jpg" width="620" height="266" alt="Дрели">
+						<a class="std-button" href="catalog.html">Открыть каталог</a>
+					</div>
+					<div class="catalog-slider catalog-slider-closed">
+						<h3 class="slider-heading">Перфораторы</h3>
+						<p>Настоящие мужские игрушки</p>
+						<img src="img/slide-image-2.jpg" width="620" height="266" alt="Перфораторы">
+						<a class="std-button" href="catalog.html">Открыть каталог</a>
+					</div>
+					<button class="arrow-left arrow" type="button"><span class="visually-hidden">Назад</span></button>
+					<button class="arrow-right arrow" type="button"><span class="visually-hidden">Вперёд</span></button>
 				</div>
 			</section>
 			<section class="popular-items container">
@@ -266,25 +266,25 @@
 				<section class="pickup">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<img src="img/map.jpg" class="map" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-					<a class="std-button" href="#">Заблудились? Напишите нам!</a>
+					<a class="open-map"  href="#"><img src="img/map.jpg" class="map" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+					<a class="std-button open-form" href="#">Заблудились? Напишите нам!</a>
 				</section>
 			</div>
 			<div class="popup white-us">
 				<button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
-				<form action="http://echo.htmlacademy.ru" method="post">
+				<form class="write-us-form" action="http://echo.htmlacademy.ru" method="post">
 					<div class="white-us-wrapper">
 						<p>
 							<label for="input-name">Ваше имя:</label>
-							<input type="text" name="name" id="input-name" placeholder="Имя Фамилия">
+							<input type="text" name="form-name" id="input-name" placeholder="Имя Фамилия">
 						</p>
 						<p>
 							<label for="input-email">Ваш e-mail:</label>
-							<input type="text" name="email" id="input-email" placeholder="email@example.com">
+							<input type="text" name="form-email" id="input-email" placeholder="email@example.com">
 						</p>
 						<p>
 							<label>Текст письма:</label>
-							<textarea name="message" rows="6" id="input-message" placeholder="В свободной форме"></textarea>
+							<textarea name="form-message" rows="6" id="input-message" placeholder="В свободной форме"></textarea>
 						</p>
 					</div>
 					<div class="write-us-submit">
@@ -295,8 +295,8 @@
 			<div class="popup popup-map">
 				<button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
 					<div class="modal-item">
-						<img src="img/map-big.jpg" width="970" height="476" alt="Как добраться?">
-					 </div>
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad523d5e55aa1d7d48c73782072a3645db175b2e108ca624245ac3f49653ed53b&amp;source=constructor" width="970" height="476" frameborder="0"></iframe>
+					</div>
 			</div>
 		</main>
 		<footer>
@@ -340,5 +340,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="js/min-script.js"></script>
 	</body>
 </html>
