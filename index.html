@@ -13,8 +13,9 @@
 				<div class="container">
 					<a class="logo" href="index.html"><img src="img/logo.png" height="18" width="108" alt="Логотип «Техномарт»"></a>
 					<p class="search-box">
-						<label for="search" class="visually-hidden">Поиск:</label>
-						<input type="search" name="search" id="search" placeholder="Поиск:">
+						<label for="search" class="visually-hidden">Поиск</label>
+						<input class="search-input" type="search" name="search" id="search" placeholder="Поиск:">
+						<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
 					</p>
 					<div class="top-header-buttons">
 						<a class="bookmarks" href="index.html">
@@ -129,6 +130,10 @@
 							<p class="price-old">32500 р.</p>
 							<p class="price">25500 р.</p>
 						</a>
+						<div class="catalog-item-buttons">
+							<button class="to-buy">Купить</button>
+							<button class="to-bookmarks">В закладки</button>
+						</div>
 					</li>
 					<li>
 						<a href="#">
@@ -137,6 +142,10 @@
 							<p class="price-old">22500 р.</p>
 							<p class="price">15500 р.</p>
 						</a>
+						<div class="catalog-item-buttons">
+							<button class="to-buy">Купить</button>
+							<button class="to-bookmarks">В закладки</button>
+						</div>
 					</li>
 					<li>
 						<a href="#">
@@ -145,6 +154,10 @@
 							<p class="price-old">30500 р.</p>
 							<p class="price">25500 р.</p>
 						</a>
+						<div class="catalog-item-buttons">
+							<button class="to-buy">Купить</button>
+							<button class="to-bookmarks">В закладки</button>
+						</div>
 					</li>
 					<li class="new">
 						<a href="#">
@@ -152,6 +165,10 @@
 							<h3>Перфоратор BOSCH BFG 2000</h3>
 							<p class="price">12500 р.</p>
 						</a>
+						<div class="catalog-item-buttons">
+							<button class="to-buy">Купить</button>
+							<button class="to-bookmarks">В закладки</button>
+						</div>
 					</li>
 				</ul>
 			</section>
@@ -283,7 +300,7 @@
 							<input type="text" name="form-email" id="input-email" placeholder="email@example.com">
 						</p>
 						<p>
-							<label>Текст письма:</label>
+							<label for="input-message">Текст письма:</label>
 							<textarea name="form-message" rows="6" id="input-message" placeholder="В свободной форме"></textarea>
 						</p>
 					</div>
@@ -295,7 +312,7 @@
 			<div class="popup popup-map">
 				<button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
 					<div class="modal-item">
-						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad523d5e55aa1d7d48c73782072a3645db175b2e108ca624245ac3f49653ed53b&amp;source=constructor" width="970" height="476" frameborder="0"></iframe>
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad523d5e55aa1d7d48c73782072a3645db175b2e108ca624245ac3f49653ed53b&amp;source=constructor" width="970" height="476" style="border:0"></iframe>
 					</div>
 			</div>
 		</main>
