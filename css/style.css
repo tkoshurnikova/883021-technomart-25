@@ -1592,37 +1592,75 @@ a {
 .brands-filter-list .filter-input+label::before {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 23px;
+	height: 23px;
 	left: 0;
 	top: 0;
-	background-image: url("../img/svg-technomart/checkbox-off.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+	border: 2px solid #c5c5c5;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.brands-filter-list .filter-input:checked+label::before {
-	background-image: url("../img/svg-technomart/checkbox-on.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+.brands-filter-list .filter-input:checked+label::after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 7px;
+	left: 6px;
+	top: 1px;
+	border-bottom: 4px solid #c5c5c5;
+	border-left: 4px solid #c5c5c5;
+	-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+			 transform: rotate(-45deg);
 }
 
 .power-filter-list .filter-input+label::before {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 0;
-	top: 0;
-	background-image: url("../img/svg-technomart/radio-off.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	left: -1px;
+	top: -1px;
+	border: 4px solid #c5c5c5;
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.power-filter-list .filter-input:checked+label::before {
-	background-image: url("../img/svg-technomart/radio-on.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+.power-filter-list .filter-input:checked+label::after {
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	left: 7px;
+	top: 7px;
+	border-radius: 50%;
+	background-color: #c5c5c5;
+}
+
+.filter-input:hover + label::before,
+.filter-input:checked:hover + label::after,
+.filter-input:focus + label::before,
+.filter-input:checked:focus + label::after {
+	border-color: #b5b5b5;
+}
+
+.power-filter-list .filter-input:checked:hover + label::after,
+.power-filter-list .filter-input:checked:focus + label::after {
+	background-color: #b5b5b5;
+}
+
+.filter-input:disabled + label::before,
+.filter-input:checked:disabled + label::after {
+	border-color: #b5b5b5;
+	opacity: 0.3;
+}
+
+.power-filter-list .filter-input:checked:disabled + label::after {
+	background-color: #b5b5b5;
+	opacity: 0.3;
 }
 
 .catalog-page label {
@@ -1669,6 +1707,7 @@ a {
 }
 
 .sort-button {
+	color: #000000;
 	opacity: 0.3;
 	border-bottom: 1px dotted #ee3643;
 	cursor: pointer;
