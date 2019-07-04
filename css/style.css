@@ -975,6 +975,19 @@ a {
 	margin-top: 66px;
 }
 
+.services-list::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 279px;
+	top: -36px;
+	left: 231px;
+	background-image: url("../img/shadow.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 .services-item p {
 	width: 620px;
 	box-sizing: border-box;
@@ -1854,8 +1867,8 @@ a {
 	position: relative;
 	color: #ffffff;
 	background-color: #63a63e;
-	border: 3px solid #63a63e;
-	border-bottom-color: #367315;
+	border: none;
+	border-bottom: 3px solid #367315;
 }
 
 .to-buy:hover,
@@ -2094,6 +2107,14 @@ a {
 	padding-left: 16px;
 	border: 2px solid #dee3e4;
 	border-radius: 4px;
+}
+
+.white-us input::placeholder,
+.white-us textarea::placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.38;
+	color: #a9a9a9;
 }
 
 .white-us input:hover,
