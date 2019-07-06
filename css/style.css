@@ -276,7 +276,10 @@ a {
 	fill-opacity: 0.5;
 }
 
-.shopping-cart-active {
+.top-header-buttons .shopping-cart-active,
+.top-header-buttons .shopping-cart-active:hover,
+.top-header-buttons .shopping-cart-active:focus,
+.top-header-buttons .shopping-cart-active:active {
 	background-color: #ee3643;
 }
 
