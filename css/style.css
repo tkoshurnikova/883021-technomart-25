@@ -135,11 +135,6 @@ a {
 	justify-content: space-between;
 }
 
-.header-top .container:hover,
-.header-top .container:focus {
-	background-color: #212a3a;
-}
-
 .search-box {
 	-ms-flex-preferred-size: 230px;
 	flex-basis: 230px;
@@ -203,6 +198,11 @@ a {
 
 .top-header-buttons a:active {
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.top-header-buttons a:hover,
+.top-header-buttons a:focus {
+	background-color: #212a3a;
 }
 
 .top-header-buttons {
@@ -285,12 +285,12 @@ a {
 	background-color: #63a63e;
 }
 
-.make-order-button:hover,
-.make-order-button:focus {
+.top-header-buttons .make-order-button:hover,
+.top-header-buttons .make-order-button:focus {
 	background-color: #5fbb2d;
 }
 
-.make-order-button:active {
+.top-header-buttons .make-order-button:active {
 	background-color: #518534;
 	color: rgba(255, 255, 255, 0.5);
 }
@@ -1069,6 +1069,8 @@ a {
 	width: 195px;
 	padding-left: 44px;
 	box-sizing: border-box;
+	background-color: #ff5357;
+	margin-top: 20px;
 }
 
 .delivery-and-pickup ul {
@@ -1990,7 +1992,8 @@ a {
 .popup-cart {
 	position: fixed;
 	top: 100px;
-	left: 480px;
+	left: 50%;
+	margin-left: -310px;
 	width: 620px;
 	z-index: 10;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
@@ -2061,7 +2064,8 @@ a {
 .white-us {
 	position: fixed;
 	top: 100px;
-	left: 35%;
+	left: 50%;
+	margin-left: -310px;
 	width: 620px;
 	z-index: 10;
 	border-top: 7px solid #ee3643;
@@ -2135,6 +2139,7 @@ a {
 	padding-top: 10px;
 	border: 2px solid #dee3e4;
 	border-radius: 4px;
+	resize: none;
 }
 
 .write-us-submit {
@@ -2153,7 +2158,8 @@ a {
 .popup-map {
 	position: fixed;
 	top: 100px;
-	left: 25%;
+	left: 50%;
+	margin-left: -485px;
 	z-index: 50;
 }
 
